@@ -1,18 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<Pane prefHeight="833.0" prefWidth="1258.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.CatalogController">
+<Pane prefHeight="822.0" prefWidth="1400.0" styleClass="offer-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CatalogController">
     <children>
-        <VBox layoutX="50" layoutY="50" spacing="20">
-            <Label style="-fx-font-size: 24; -fx-text-fill: black;" text="Available Cars" />
-            <Button onAction="#selectCar1" text="Car 1: Sedan - $50/day" />
-            <Button onAction="#selectCar2" text="Car 2: SUV - $70/day" />
-            <Button onAction="#selectCar3" text="Car 3: Convertible - $90/day" />
-            <Button onAction="#selectCar4" text="Car 4: Truck - $80/day" />
-        </VBox>
+        <VBox layoutX="24.0" layoutY="233.0" spacing="20" />
+         <Label alignment="CENTER" layoutX="454.0" layoutY="28.0" prefHeight="106.0" prefWidth="402.0" style="-fx-font-size: 30; -fx-text-fill: white;" styleClass="offer-background" stylesheets="@../../style/css/Catalog.css" text="Available Cars" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="24.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+               <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 1: MC-Laren - $2000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/McLaren_Senna.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="342.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="260.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Bugatti_Divo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar2" prefHeight="35.0" prefWidth="207.0" text="SportCars 2: Buggati - $4000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="673.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar3" prefHeight="35.0" prefWidth="207.0" text="SportCars 3: Chevrolet - $4500/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutX="1.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Chevrolet_Corvette.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="1008.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar4" prefHeight="35.0" prefWidth="228.0" text="SportCars 4: Honda-Acura - $6000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Honda_Acura_NSX.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="24.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 5: Lotus-Evija - $2000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Lotus_Evija_Fittipaldi.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="342.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 6: Noble-M500 - $2000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Noble_M500.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="673.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="228.0" text="SportCars 7: Terzo-Milleno - $2000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/Terzo_Millennio.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
+      <Pane layoutX="1008.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+         <children>
+            <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 8: MC-Laren - $4000/day" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@../../style/css/Catalog.css" />
+                  <URL value="@../../style/css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="transparent-button" />
+                  <String fx:value="operaBtnBlue" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+               <image>
+                  <Image url="@../../image/Cars/McLaren_570GT.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../../style/css/Catalog.css" />
+            <URL value="@../../style/css/main.css" />
+         </stylesheets>
+      </Pane>
     </children>
+   <stylesheets>
+      <URL value="@../../style/css/Catalog.css" />
+      <URL value="@../../style/css/main.css" />
+   </stylesheets>
 </Pane>

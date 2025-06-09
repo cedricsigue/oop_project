@@ -2,13 +2,24 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="1258.0" style="-fx-background-color: #525252;" stylesheets="@css/mainPage.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainPageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="1251.0" style="-fx-background-color: #525252;" stylesheets="@css/mainPage.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainPageController">
     <children>
+      <Pane layoutX="878.0" prefHeight="839.0" prefWidth="372.0" style="-fx-background-color: #1b1b1b;">
+         <children>
+            <Label layoutX="7.0" layoutY="98.0" prefHeight="278.0" prefWidth="366.0" text="We want you to have a stress-free rental experience, so we make it easy to hire a car - by providing simple car rental app with customer reviews and plenty of pick-up locations across the cities." textFill="#bcbcbc" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
         <!-- Left Sidebar -->
         <Pane layoutX="-7.0" prefHeight="833.0" prefWidth="380.0" style="-fx-background-color: #1b1b1b;">
             <children>
@@ -47,9 +58,6 @@
             </font>
         </Label>
 
-        <!-- Bottom bar -->
-        <Pane layoutX="-4.0" layoutY="706.0" prefHeight="127.0" prefWidth="1258.0" style="-fx-background-color: #303030; -fx-background-radius: 50 50 0 0;" />
-
         <!-- Top navigation bar -->
         <Pane layoutY="-3.0" prefHeight="70.0" prefWidth="1243.0" style="-fx-background-color: transparent;">
             <children>
@@ -72,7 +80,7 @@
                                         <Font name="System Bold" size="20.0" />
                                     </font>
                                 </Button>
-                                <Button fx:id="openCatalogBtn" layoutX="989.0" layoutY="13.0" mnemonicParsing="false" onAction="#showContactAlert" prefHeight="45.0" prefWidth="180.0" styleClass="contactUs" text="Contact Us">
+                                <Button fx:id="openCatalogBtn" layoutX="989.0" layoutY="13.0" mnemonicParsing="false" onAction="#showContactAlert" prefHeight="45.0" prefWidth="180.0" styleClass="contactUs" stylesheets="@../../../../src/main/resources/style/css/main.css" text="Contact Us">
                                     <font>
                                         <Font name="System Bold" size="14.0" />
                                     </font>
@@ -85,12 +93,12 @@
         </Pane>
 
         <!-- Main button -->
-        <Button fx:id="openCatalogBtn1" layoutX="539.0" layoutY="581.0" mnemonicParsing="false" onAction="#openCatalogBtnClick" prefHeight="45.0" prefWidth="180.0" styleClass="openCatalogBtnGreen" text="Open catalog">
+        <Button fx:id="openCatalogBtn1" layoutX="539.0" layoutY="581.0" mnemonicParsing="false" onAction="#openCatalogBtnClick" prefHeight="45.0" prefWidth="180.0" styleClass="openCatalogBtnGreen" stylesheets="@../../../../src/main/resources/style/css/main.css" text="Open catalog">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Button>
-      <Pane layoutX="3.0" layoutY="10.0" prefHeight="833.0" prefWidth="380.0" style="-fx-background-color: #1b1b1b;">
+      <Pane layoutX="3.0" layoutY="-4.0" prefHeight="839.0" prefWidth="372.0" style="-fx-background-color: #1b1b1b;">
          <children>
             <Label layoutX="95.0" layoutY="137.0" text="100+" textFill="WHITE">
                <font>
@@ -114,5 +122,13 @@
             </Label>
          </children>
       </Pane>
+
+              <!-- Bottom bar -->
+        <Pane layoutX="-7.0" layoutY="716.0" prefHeight="127.0" prefWidth="1258.0" style="-fx-background-color: #303030; -fx-background-radius: 50 50 0 0;" />
+      <ImageView fitHeight="385.0" fitWidth="569.0" layoutX="337.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../src/main/resources/image/Ui_image/McLaren_GT.png" />
+         </image>
+      </ImageView>
     </children>
 </Pane>
